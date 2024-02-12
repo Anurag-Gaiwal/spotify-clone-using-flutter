@@ -24,14 +24,14 @@ class SearchScreen extends StatelessWidget {
 
               // Add the top trending songs title
               Text(
-                'Top Trending Songs',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.red),
+                'Explore your genre',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
               ),
 
               // Add the three images with their song names
-              _buildSuggestedItem('Song 1', 'assets/song1.png'),
-              _buildSuggestedItem('Song 2', 'assets/song2.png'),
-              _buildSuggestedItem('Song 3', 'assets/song3.png'),
+              _buildSuggestedItem('Tare zameen par', 'assets/song1.png'),
+              _buildSuggestedItem('Ram siya ram', 'assets/song2.png'),
+              _buildSuggestedItem('Rapgod', 'assets/song3.png'),
             ],
           ),
         ),
@@ -74,14 +74,14 @@ class SearchScreen extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 16),
       padding: EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-        color: Colors.grey[900],
+        color: Colors.white ,
         borderRadius: BorderRadius.circular(30),
       ),
       child: TextField(
         style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
           hintText: 'Search for songs...',
-          hintStyle: TextStyle(color: Colors.grey),
+          hintStyle: TextStyle(color: Colors.black),
           suffixIcon: Icon(Icons.search, color: Colors.white),
           border: InputBorder.none,
         ),
